@@ -7,7 +7,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 class ApplicationSimpleApplicationTests {
 
 	@Test
-	void contextLoads() {
+	public void testGreet() {
+		assertEquals("Hello, World!", ApplicationSimpleApplicationTests.greet(null));
+		assertEquals("Hello, John!", ApplicationSimpleApplicationTests.greet("John"));
 	}
-
 }
